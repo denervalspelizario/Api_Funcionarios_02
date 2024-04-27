@@ -1,12 +1,12 @@
-﻿namespace WEB_API.ViewModel
+﻿namespace WEB_API.Aplication.ViewModel
 {
     public class EmployeeViewModel
     {
-        
+
         public string Name { get; set; }
         public int Age { get; set; }
 
-        
+
         public IFormFile Photo { get; set; }
     }
 }

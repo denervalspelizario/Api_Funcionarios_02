@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WEB_API.Model;
-using WEB_API.ViewModel;
+using WEB_API.Aplication.ViewModel;
+using WEB_API.Domain.Model;
 
 namespace WEB_API.Controllers
 {

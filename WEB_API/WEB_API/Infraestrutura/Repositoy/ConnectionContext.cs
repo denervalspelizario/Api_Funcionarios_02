@@ -1,16 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WEB_API.Model;
+using WEB_API.Domain.Model;
 
-namespace WEB_API.Infraestrutura
+namespace WEB_API.Infraestrutura.Repositoy
 {
-    
+
     public class ConnectionContext : DbContext
     {
-        
+
         public DbSet<Employee> Employees { get; set; }
 
 
-        
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql(
                 "Server=localhost;" +

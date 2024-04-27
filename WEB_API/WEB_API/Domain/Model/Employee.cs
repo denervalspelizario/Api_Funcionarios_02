@@ -1,19 +1,19 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WEB_API.Model
+namespace WEB_API.Domain.Model
 {
-    
+
     [Table("employee")]
     public class Employee
     {
-        [Key] 
+        [Key]
         public int id { get; private set; }
         public string name { get; private set; }
         public int age { get; private set; }
-        public string? photo { get; private set; } 
+        public string? photo { get; private set; }
 
-        
+
         public Employee(string name, int age, string photo)
         {
             this.name = name;
@@ -21,7 +21,7 @@ namespace WEB_API.Model
             this.photo = photo;
         }
 
-        
+
         public Employee()
         {
         }
